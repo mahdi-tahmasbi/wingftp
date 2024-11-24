@@ -1,5 +1,5 @@
+import Logo from "@/components/common/logo";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import React from "react";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa6";
@@ -11,12 +11,7 @@ const ClientAuthentication = () => {
       <div className="flex justify-center items-center flex-col space-y-7 w-1/2">
         <div className="shadow-md w-[90%] max-w-[480px] rounded-md p-6 bg-white">
           <div className="flex gap-3 items-end">
-            <Image
-              src={"/images/logo.png"}
-              alt="Company Logo"
-              width={150}
-              height={50}
-            />
+            <Logo />
             <h1 className="font-medium text-[#CCC] text-2xl">Web Client</h1>
           </div>
           <form className="flex flex-col space-y-6 mt-16">
